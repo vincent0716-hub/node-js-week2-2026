@@ -1,7 +1,7 @@
-const http = require('node:http');
-const fs = require('node:fs');
-const { formidable } = require('formidable');  // formidable v3 用 named import
-
+const http = require("node:http");
+const fs = require("node:fs");
+const { formidable } = require("formidable"); // formidable v3 用 named import
+//git check
 // ========== 任務一：讀取上傳設定 ==========
 /**
  * 從 process.env 讀取上傳相關設定，回傳設定物件。
@@ -136,7 +136,7 @@ function router(req, res, config) {
   //   - form.on('error', ...) 不需再處理 res 相關，避免產生回應兩次的錯誤。這個部分可用來紀錄 log、清理暫存檔、額外監控等等。目前可先有此概念即可，或者初步撰寫如下：
   //     form.on('error', (err) => {
   //       console.log(err); // 記錄 log、清理暫存檔、額外監控可以寫在這邊
-  //     });  
+  //     });
 }
 
 // ========== 任務六：建立上傳 server ==========
